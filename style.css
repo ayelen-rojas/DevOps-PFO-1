@@ -1,7 +1,7 @@
 /* --- Reseteo básico y estilos globales --- */
 body {
-    font-family: 'Montserrat', sans-serif; 
-    background: linear-gradient(135deg, #667eea, #764ba2); 
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: #333;
     margin: 0;
     padding: 20px;
@@ -14,12 +14,12 @@ body {
 
 /* --- Contenedor principal --- */
 .card {
-    background-color: rgba(255, 255, 255, 0.95); 
-    border-radius: 20px; 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     max-width: 600px;
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
     text-align: center;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -27,14 +27,14 @@ body {
 
 /* --- Encabezado --- */
 .card-header {
-    background-color: rgba(0, 0, 0, 0.05); 
+    background-color: rgba(0, 0, 0, 0.05);
     padding: 30px 20px;
 }
 
 h1 {
     margin: 0;
     color: #3f3c64;
-    font-size: 2em; 
+    font-size: 2em;
 }
 
 /* --- Tarjeta --- */
@@ -44,38 +44,103 @@ h1 {
 
 h2 {
     color: #764ba2;
-    border-bottom: 2px solid #667eea; 
-    display: inline-block; 
+    border-bottom: 2px solid #667eea;
+    display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
 ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin-bottom: 30px;
 }
 
 li {
-    background-color: rgba(102, 126, 234, 0.1); 
+    background-color: rgba(102, 126, 234, 0.1);
     border-radius: 8px;
     padding: 12px;
     margin-bottom: 10px;
     font-weight: 500;
-    transition: transform 0.2s ease-in-out; 
+    transition: transform 0.2s ease-in-out;
 }
 
 li:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
     background-color: rgba(102, 126, 234, 0.2);
 }
 
 .card-body p {
     font-size: 1.1em;
-    line-height: 1.6; 
+    line-height: 1.6;
     color: #555;
 }
 
+/* --- Formulario  --- */
+.form-container {
+    margin-top: 1.8rem;
+    text-align: center;
+    /* centramos todo el contenido */
+}
+
+.form-container h3 {
+    color: #3f3c64;
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+    text-align: center;
+    /* centramos el título */
+}
+
+.form-container label {
+    display: block;
+    margin: 0.8rem 0 0.3rem;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+}
+
+.form-container input {
+    width: 95%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-container input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+    outline: none;
+}
+
+.form-container input::placeholder {
+    color: #a6a0c9;
+    font-style: italic;
+}
+
+.form-container button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.form-container button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #764ba2, #667eea);
+}
+
+#respuesta {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #3f3c64;
+}
 
 /* --- Pie  --- */
 .card-footer {
@@ -85,4 +150,3 @@ li:hover {
     font-style: italic;
     color: #888;
 }
-
